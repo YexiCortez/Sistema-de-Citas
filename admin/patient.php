@@ -116,22 +116,22 @@ $(document).ready(function(){
                 var html = '<div class="table-responsive">';
                 html += '<table class="table">';
 
-                html += '<tr><th width="40%" class="text-right">Email Address</th><td width="60%">'+data.patient_email_address+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Correo Electrónico</th><td width="60%">'+data.patient_email_address+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Password</th><td width="60%">'+data.patient_password+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Contraseña</th><td width="60%">'+data.patient_password+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Patient Name</th><td width="60%">'+data.patient_first_name+' '+data.patient_last_name+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Nombre</th><td width="60%">'+data.patient_first_name+' '+data.patient_last_name+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Contact No.</th><td width="60%">'+data.patient_phone_no+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Número de celular</th><td width="60%">'+data.patient_phone_no+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Address</th><td width="60%">'+data.patient_address+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Dirección</th><td width="60%">'+data.patient_address+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Date of Birth</th><td width="60%">'+data.patient_date_of_birth+'</td></tr>';
-                html += '<tr><th width="40%" class="text-right">Gender</th><td width="60%">'+data.patient_gender+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Fecha de Nacimiento</th><td width="60%">'+data.patient_date_of_birth+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Género</th><td width="60%">'+data.patient_gender+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Maritial Status</th><td width="60%">'+data.patient_maritial_status+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Estado Civil</th><td width="60%">'+data.patient_maritial_status+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Email Verification Status</th><td width="60%">'+data.email_verify+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Verificación de Correo electrónico</th><td width="60%">'+data.email_verify+'</td></tr>';
 
                 html += '</table></div>';
 
@@ -144,11 +144,11 @@ $(document).ready(function(){
         })
     });
 
-	/*$(document).on('click', '.delete_button', function(){
+	$(document).on('click', '.delete_button', function(){
 
     	var id = $(this).data('id');
 
-    	if(confirm("Are you sure you want to remove it?"))
+    	if(confirm("¿Estás seguro que deseas eliminarlo?"))
     	{
 
       		$.ajax({
@@ -178,7 +178,7 @@ $(document).ready(function(){
 
     	}
 
-  	});*/
+  	});
 
 
 

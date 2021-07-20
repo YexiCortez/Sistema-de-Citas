@@ -44,7 +44,7 @@ include('header.php');
                                             }
                                             ?>
                                             <th>Fecha de la cita</th>
-                                            <th>Día de la cita y</th>
+                                            <th>Día de la cita</th>
                                             <th>Tiempo de inicio</th>
                                             <th>Tiempo Final</th>
                                             <th>Tiempo de la Consulta</th>
@@ -79,9 +79,9 @@ include('header.php');
                     {
                     ?>
                     <div class="form-group">
-                        <label>Select Doctor</label>
+                        <label>Seleccionar Doctor</label>
                         <select name="doctor_id" id="doctor_id" class="form-control" required>
-                            <option value="">Sleccionar Doctor</option>
+                            <option value="">Seleccionar Doctor</option>
                             <?php
                             $object->query = "
                             SELECT * FROM doctor_table 
@@ -143,7 +143,7 @@ include('header.php');
                                 for($i = 1; $i <= 15; $i++)
                                 {
                                     $count += 5;
-                                    echo '<option value="'.$count.'">'.$count.' Minute</option>';
+                                    echo '<option value="'.$count.'">'.$count.' Minutos </option>';
                                 }
                                 ?>
                             </select>
@@ -154,7 +154,7 @@ include('header.php');
           			<input type="hidden" name="hidden_id" id="hidden_id" />
           			<input type="hidden" name="action" id="action" value="Add" />
           			<input type="submit" name="submit" id="submit_button" class="btn btn-success" value="Add" />
-          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         		</div>
       		</div>
     	</form>
@@ -232,11 +232,11 @@ $(document).ready(function(){
 
 		$('#doctor_schedule_form').parsley().reset();
 
-    	$('#modal_title').text('Add Doctor Schedule Data');
+    	$('#modal_title').text('Agregar datos de horarios médicos');
 
-    	$('#action').val('Add');
+    	$('#action').val('Agregar');
 
-    	$('#submit_button').val('Add');
+    	$('#submit_button').val('Agregar');
 
     	$('#doctor_scheduleModal').modal('show');
 
@@ -266,7 +266,7 @@ $(document).ready(function(){
 					if(data.error != '')
 					{
 						$('#form_message').html(data.error);
-						$('#submit_button').val('Add');
+						$('#submit_button').val('Agregar');
 					}
 					else
 					{
@@ -321,9 +321,9 @@ $(document).ready(function(){
 
 	        	$('#modal_title').text('Editar datos de programación del doctor');
 
-	        	$('#action').val('Edit');
+	        	$('#action').val('Editar');
 
-	        	$('#submit_button').val('Edit');
+	        	$('#submit_button').val('Editar');
 
 	        	$('#doctor_scheduleModal').modal('show');
 
@@ -378,7 +378,7 @@ $(document).ready(function(){
 
     	var id = $(this).data('id');
 
-    	if(confirm("Are you sure you want to remove it?"))
+    	if(confirm("¿Seguro que quieres eliminarlo?"))
     	{
 
       		$.ajax({

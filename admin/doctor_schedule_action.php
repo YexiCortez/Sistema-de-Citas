@@ -103,7 +103,7 @@ if(isset($_POST["action"]))
 
 			$sub_array[] = $row["doctor_schedule_end_time"];
 
-			$sub_array[] = $row["average_consulting_time"] . ' Minute';
+			$sub_array[] = $row["average_consulting_time"] . ' Minutos';
 
 			$status = '';
 			if($row["doctor_schedule_status"] == 'Active')

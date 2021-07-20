@@ -591,7 +591,7 @@ if(isset($_POST["action"]))
 		WHERE appointment_id = :appointment_id
 		";
 		$object->execute($data);
-		echo '<div class="alert alert-success">Your Appointment has been Cancel</div>';
+		echo '<div class="alert alert-success">Tu cita fue cancelada</div>';
 	}
 }
 

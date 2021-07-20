@@ -26,9 +26,9 @@ if(isset($_GET["id"]))
 		{
 			$html .= '<img src="'.substr($hospital_row['hospital_logo'], 3).'" /><br />';
 		}
-		$html .= '<h2 align="center">'.$hospital_row['hospital_name'].'</h2>
-		<p align="center">'.$hospital_row['hospital_address'].'</p>
-		<p align="center"><b>Contact No. - </b>'.$hospital_row['hospital_contact_no'].'</p></td></tr>
+		$html .= '<h2 align="center">'.$hospital_row['hospital_name'].'</h2> <br><br>
+		<p align="center">'.$hospital_row['hospital_address'].'</p> <br><br>
+		<p align="center"><b>Numero de Celular - </b>'.$hospital_row['hospital_contact_no'].'</p><br><br></td></tr>
 		';
 	}
 
@@ -64,21 +64,21 @@ if(isset($_GET["id"]))
 		$doctor_schedule_data = $object->get_result();
 		
 		$html .= '
-		<h4 align="center">Patient Details</h4>
+		<h4 align="center">Detalles del paciente</h4><br><br>
 		<table border="0" cellpadding="5" cellspacing="5" width="100%">';
 
 		foreach($patient_data as $patient_row)
 		{
-			$html .= '<tr><th width="50%" align="right">Patient Name</th><td>'.$patient_row["patient_first_name"].' '.$patient_row["patient_last_name"].'</td></tr>
-			<tr><th width="50%" align="right">Contact No.</th><td>'.$patient_row["patient_phone_no"].'</td></tr>
-			<tr><th width="50%" align="right">Address</th><td>'.$patient_row["patient_address"].'</td></tr>';
+			$html .= '<tr><th width="50%" align="right">Nombre</th><td>'.$patient_row["patient_first_name"].' '.$patient_row["patient_last_name"].'</td></tr>
+			<tr><th width="50%" align="right">Número de celular</th><td>'.$patient_row["patient_phone_no"].'</td></tr>
+			<tr><th width="50%" align="right">Dirección</th><td>'.$patient_row["patient_address"].'</td></tr>';
 		}
 
 		$html .= '</table><br /><hr />
-		<h4 align="center">Appointment Details</h4>
+		<h4 align="center">Detalles de la cita</h4><br>
 		<table border="0" cellpadding="5" cellspacing="5" width="100%">
 			<tr>
-				<th width="50%" align="right">Appointment No.</th>
+				<th width="50%" align="right">Cita No.</th>
 				<td>'.$appointment_row["appointment_number"].'</td>
 			</tr>
 		';
@@ -86,15 +86,15 @@ if(isset($_GET["id"]))
 		{
 			$html .= '
 			<tr>
-				<th width="50%" align="right">Doctor Name</th>
+				<th width="50%" align="right">Nombre del doctor</th>
 				<td>'.$doctor_schedule_row["doctor_name"].'</td>
 			</tr>
 			<tr>
-				<th width="50%" align="right">Appointment Date</th>
+				<th width="50%" align="right">Fecha de la cita</th>
 				<td>'.$doctor_schedule_row["doctor_schedule_date"].'</td>
 			</tr>
 			<tr>
-				<th width="50%" align="right">Appointment Day</th>
+				<th width="50%" align="right">Día de la cita</th>
 				<td>'.$doctor_schedule_row["doctor_schedule_day"].'</td>
 			</tr>
 				
@@ -103,19 +103,19 @@ if(isset($_GET["id"]))
 
 		$html .= '
 			<tr>
-				<th width="50%" align="right">Appointment Time</th>
+				<th width="50%" align="right">Hora de la cita</th>
 				<td>'.$appointment_row["appointment_time"].'</td>
 			</tr>
 			<tr>
-				<th width="50%" align="right">Reason for Appointment</th>
+				<th width="50%" align="right">Razón de la cita</th>
 				<td>'.$appointment_row["reason_for_appointment"].'</td>
 			</tr>
 			<tr>
-				<th width="50%" align="right">Patient come into Hostpital</th>
+				<th width="50%" align="right">Va a el hospital</th>
 				<td>'.$appointment_row["patient_come_into_hospital"].'</td>
 			</tr>
 			<tr>
-				<th width="50%" align="right">Doctor Comment</th>
+				<th width="50%" align="right">Comentario del Doctor</th>
 				<td>'.$appointment_row["doctor_comment"].'</td>
 			</tr>
 		</table>

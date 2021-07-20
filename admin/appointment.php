@@ -16,7 +16,7 @@ include('header.php');
 ?>
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Appointment Management</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Gestión de Citas</h1>
 
                     <!-- DataTales Example -->
                     <span id="message"></span>
@@ -24,7 +24,7 @@ include('header.php');
                         <div class="card-header py-3">
                         	<div class="row">
                             	<div class="col-sm-6">
-                            		<h6 class="m-0 font-weight-bold text-primary">Appointment List</h6>
+                            		<h6 class="m-0 font-weight-bold text-primary">Lista de Citas</h6>
                             	</div>
                             	<div class="col-sm-6" align="right">
                                     <div class="row">
@@ -40,7 +40,7 @@ include('header.php');
                                         </div>
                                         <div class="col-md-3">
                                             <div class="row">
-                                                <button type="button" name="search" id="search" value="Search" class="btn btn-info btn-sm"><i class="fas fa-search"></i></button>
+                                                <button type="button" name="search" id="search" value="Buscar" class="btn btn-info btn-sm"><i class="fas fa-search"></i></button>
                                                 &nbsp;<button type="button" name="refresh" id="refresh" class="btn btn-secondary btn-sm"><i class="fas fa-sync-alt"></i></button>
                                             </div>
                                         </div>
@@ -171,7 +171,7 @@ $(document).ready(function(){
 			},
 		],
 	});*/
-
+    
     $(document).on('click', '.view_button', function(){
 
         var appointment_id = $(this).data('id');

@@ -72,7 +72,7 @@ if(isset($_POST["action"]))
 			$status = '';
 			if($row["email_verify"] == 'Yes')
 			{
-				$status = '<span class="badge badge-success">Yes</span>';
+				$status = '<span class="badge badge-success">Sí</span>';
 			}
 			else
 			{
@@ -226,7 +226,7 @@ if(isset($_POST["action"]))
 			$data['patient_maritial_status'] = $row['patient_maritial_status'];
 			if($row['email_verify'] == 'Yes')
 			{
-				$data['email_verify'] = '<span class="badge badge-success">Yes</span>';
+				$data['email_verify'] = '<span class="badge badge-success">Sí</span>';
 			}
 			else
 			{

@@ -91,10 +91,10 @@ if($object->is_login())
             <h1 class="h3 mb-3 fw-normal">Sistema de gestión de citas médicas</h1>
             <span id="error"></span>
             <div class="form-group">
-                <input type="text" name="admin_email_address" id="admin_email_address" class="form-control" required autofocus data-parsley-type="email" data-parsley-trigger="keyup" placeholder="Enter Email Address..." />
+                <input type="text" name="admin_email_address" id="admin_email_address" class="form-control" required autofocus data-parsley-type="email" data-parsley-trigger="keyup" placeholder="Correo electrónico..." />
             </div>
             <div class="form-group">
-                <input type="password" name="admin_password" id="admin_password" class="form-control" required  data-parsley-trigger="keyup" placeholder="Password" />
+                <input type="password" name="admin_password" id="admin_password" class="form-control" required  data-parsley-trigger="keyup" placeholder="Contraseña" />
             </div>
             <div class="form-group">
                 <button type="submit" name="login_button" id="login_button" class="btn btn-primary btn-user btn-block">Iniciar sesión</button>

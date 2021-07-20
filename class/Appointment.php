@@ -4,7 +4,7 @@
 
 class Appointment
 {
-	public $base_url = 'http://localhost/doctor/';
+	public $base_url = 'http://localhost:8080/doctor/';
 	public $connect;
 	public $query;
 	public $statement;
@@ -12,7 +12,7 @@ class Appointment
 
 	public function __construct()
 	{
-		$this->connect = new PDO("mysql:host=localhost;dbname=doctor_appoinment", "root", "1234");
+		$this->connect = new PDO("mysql:host=localhost;dbname=doctor_appointment", "root", "1234");
 
 		date_default_timezone_set('Asia/Kolkata');
 

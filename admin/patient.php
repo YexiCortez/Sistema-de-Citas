@@ -21,7 +21,7 @@ include('header.php');
 ?>
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Patient Management</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Administracion del Paciente</h1>
 
                     <!-- DataTales Example -->
                     <span id="message"></span>
@@ -29,7 +29,7 @@ include('header.php');
                         <div class="card-header py-3">
                         	<div class="row">
                             	<div class="col">
-                            		<h6 class="m-0 font-weight-bold text-primary">Patient List</h6>
+                            		<h6 class="m-0 font-weight-bold text-primary">Lista de Pacientes</h6>
                             	</div>
                             	<div class="col" align="right">
                             	</div>
@@ -40,12 +40,12 @@ include('header.php');
                                 <table class="table table-bordered" id="patient_table" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Email Address</th>
-                                            <th>Contact No.</th>
-                                            <th>Email Verification Status</th>
-                                            <th>Action</th>
+                                            <th>Nombre</th>
+                                            <th>Apellido</th>
+                                            <th>Email</th>
+                                            <th>Numero de Telefono</th>
+                                            <th>Status de Verificacion de Email</th>
+                                            <th>Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -64,14 +64,14 @@ include('header.php');
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="modal_title">View Patient Details</h4>
+                <h4 class="modal-title" id="modal_title">Ver detalles del Paciente</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body" id="patient_details">
                 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>

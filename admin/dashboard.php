@@ -30,7 +30,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Today Total Appointment</div>
+                                                Citas Totales Hoy</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $object->get_total_today_appointment(); ?></div>
                                         </div>
                                         <div class="col-auto">
@@ -48,7 +48,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Yesterday Total Appointment</div>
+                                                Citas Totales Ayer</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $object->get_total_yesterday_appointment(); ?></div>
                                         </div>
                                         <div class="col-auto">
@@ -64,7 +64,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Last 7 Days Total Appointment</div>
+                                                Citas Totales Ultimos 7 Dias</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $object->get_total_seven_day_appointment(); ?></div>
                                         </div>
                                         <div class="col-auto">
@@ -80,7 +80,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total Appointment till date</div>
+                                                Citas totales hasta la fecha</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $object->get_total_appointment(); ?></div>
                                         </div>
                                         <div class="col-auto">
@@ -96,7 +96,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total Registered Patient</div>
+                                                Pacientes Totales Registrados</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $object->get_total_patient(); ?></div>
                                         </div>
                                         <div class="col-auto">

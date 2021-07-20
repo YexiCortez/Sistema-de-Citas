@@ -36,11 +36,11 @@ include('header.php');
                             <div class="card-header py-3">
                                 <div class="row">
                                     <div class="col">
-                                        <h6 class="m-0 font-weight-bold text-primary">Profile</h6>
+                                        <h6 class="m-0 font-weight-bold text-primary">Perfil</h6>
                                     </div>
                                     <div clas="col" align="right">
                                         <input type="hidden" name="action" value="admin_profile" />
-                                        <button type="submit" name="edit_button" id="edit_button" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Edit</button>
+                                        <button type="submit" name="edit_button" id="edit_button" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Editar</button>
                                         &nbsp;&nbsp;
                                     </div>
                                 </div>
@@ -49,31 +49,31 @@ include('header.php');
                                 <!--<div class="row">
                                     <div class="col-md-6">!-->
                                         <div class="form-group">
-                                            <label>Admin Name</label>
+                                            <label>Nombre del Administrador</label>
                                             <input type="text" name="admin_name" id="admin_name" class="form-control" required data-parsley-pattern="/^[a-zA-Z0-9 \s]+$/" data-parsley-maxlength="175" data-parsley-trigger="keyup" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Admin Email Address</label>
+                                            <label>Email del Administrador</label>
                                             <input type="text" name="admin_email_address" id="admin_email_address" class="form-control" required  data-parsley-type="email" data-parsley-trigger="keyup" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Password</label>
+                                            <label>Contraseña</label>
                                             <input type="password" name="admin_password" id="admin_password" class="form-control" required data-parsley-maxlength="16" data-parsley-trigger="keyup" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Hospital Name</label>
+                                            <label>Nombre del Hospital</label>
                                             <input type="text" name="hospital_name" id="hospital_name" class="form-control" required  data-parsley-trigger="keyup" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Hospital Address</label>
+                                            <label>Direccion del Hospital</label>
                                             <textarea name="hospital_address" id="hospital_address" class="form-control" required ></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label>Hospital Contact No.</label>
+                                            <label>Numero de contacto Hospital</label>
                                             <input type="text" name="hospital_contact_no" id="hospital_contact_no" class="form-control" required  data-parsley-trigger="keyup" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Hospital Logo</label><br />
+                                            <label>Logo del Hospital</label><br />
                                             <input type="file" name="hospital_logo" id="hospital_logo" />
                                             <span id="uploaded_hospital_logo"></span>
                                         </div>

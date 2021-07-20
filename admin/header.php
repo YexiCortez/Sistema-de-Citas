@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Doctor Appointment Management System in PHP</title>
+    <title>Sistema de gestión de citas médicas</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -69,7 +69,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="patient.php">
                     <i class="fas fa-procedures"></i>
-                    <span>Patient</span></a>
+                    <span>Paciente</span></a>
             </li>
             <?php
             }
@@ -77,13 +77,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="doctor_schedule.php">
                     <i class="fas fa-user-clock"></i>
-                    <span>Doctor Schedule</span></a>
+                    <span>Horario de Doctor</span></a>
             </li>
             
             <li class="nav-item">
                 <a class="nav-link" href="appointment.php">
                     <i class="fas fa-notes-medical"></i>
-                    <span>Appointment</span></a>
+                    <span>Cita</span></a>
             </li>
             <?php
             if($_SESSION["type"] == 'Admin')
@@ -92,7 +92,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="profile.php">
                     <i class="far fa-id-card"></i>
-                    <span>Profile</span></a>
+                    <span>Perfil</span></a>
             </li>
             <?php
             } 
@@ -102,7 +102,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="doctor_profile.php">
                     <i class="far fa-id-card"></i>
-                    <span>Profile</span></a>
+                    <span>Perfil</span></a>
             </li>
             <?php
             }

@@ -229,7 +229,7 @@ if(isset($_POST["action"]))
 					<td>'.$patient_row["patient_first_name"].' '.$patient_row["patient_last_name"].'</td>
 				</tr>
 				<tr>
-					<th width="40%" class="text-right">Número de contacot</th>
+					<th width="40%" class="text-right">Número de contácto</th>
 					<td>'.$patient_row["patient_phone_no"].'</td>
 				</tr>
 				<tr>
@@ -242,7 +242,7 @@ if(isset($_POST["action"]))
 			$html .= '
 			</table>
 			<hr />
-			<h4 class="text-center">Detalles de la cita /h4>
+			<h4 class="text-center">Detalles de la cita </h4>
 			<table class="table">
 				<tr>
 					<th width="40%" class="text-right">Número de cita</th>
@@ -289,8 +289,8 @@ if(isset($_POST["action"]))
 						{
 							$html .= '
 								<tr>
-									<th width="40%" class="text-right">Patient come into Hostpital</th>
-									<td>Yes</td>
+									<th width="40%" class="text-right">El paciente fue al hospital</th>
+									<td>Sí</td>
 								</tr>
 								<tr>
 									<th width="40%" class="text-right">Comentario del Doctor</th>
@@ -305,8 +305,8 @@ if(isset($_POST["action"]))
 									<th width="40%" class="text-right">El paciente entra al hospital</th>
 									<td>
 										<select name="patient_come_into_hospital" id="patient_come_into_hospital" class="form-control" required>
-											<option value="">Select</option>
-											<option value="Yes" selected>Yes</option>
+											<option value="">Seleccionar</option>
+											<option value="Yes" selected>Sí</option>
 										</select>
 									</td>
 								</tr
@@ -320,8 +320,8 @@ if(isset($_POST["action"]))
 								<th width="40%" class="text-right">El paciente entra al hospital</th>
 								<td>
 									<select name="patient_come_into_hospital" id="patient_come_into_hospital" class="form-control" required>
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
+										<option value="">Seleccionar</option>
+										<option value="Yes">Sí</option>
 									</select>
 								</td>
 							</tr

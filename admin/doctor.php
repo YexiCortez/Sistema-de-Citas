@@ -41,12 +41,12 @@ include('header.php');
                                 <table class="table table-bordered" id="doctor_table" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Imagne de Perfil</th>
+                                            <th>Imágen de Perfil</th>
                                             <th>Correo</th>
                                             <th>Contraseña</th>
                                             <th>Nombre</th>
                                             <th>Número de teléfono</th>
-                                            <th>Especidad</th>
+                                            <th>Especialidad</th>
                                             <th>Estado</th>
                                             <th>Acción</th>
                                         </tr>
@@ -188,11 +188,11 @@ $(document).ready(function(){
 
 		$('#doctor_form').parsley().reset();
 
-    	$('#modal_title').text('Add Doctor');
+    	$('#modal_title').text('Agregar Doctor');
 
-    	$('#action').val('Add');
+    	$('#action').val('Agregar');
 
-    	$('#submit_button').val('Add');
+    	$('#submit_button').val('Agregar');
 
     	$('#doctorModal').modal('show');
 
@@ -302,7 +302,7 @@ $(document).ready(function(){
 		{
 			next_status = 'Inactive';
 		}
-		if(confirm("AEstás seguro que quieres "+next_status+"?"))
+		if(confirm("Estás seguro que quieres "+next_status+"?"))
     	{
 
       		$.ajax({
@@ -353,20 +353,20 @@ $(document).ready(function(){
 
                 html += '<tr><td colspan="2" class="text-center"><img src="'+data.doctor_profile_image+'" class="img-fluid img-thumbnail" width="150" /></td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Email Address</th><td width="60%">'+data.doctor_email_address+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Correo Electrónico</th><td width="60%">'+data.doctor_email_address+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Password</th><td width="60%">'+data.doctor_password+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Contraseña</th><td width="60%">'+data.doctor_password+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Name</th><td width="60%">'+data.doctor_name+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Nombre</th><td width="60%">'+data.doctor_name+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Phone No.</th><td width="60%">'+data.doctor_phone_no+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Número de celular</th><td width="60%">'+data.doctor_phone_no+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Address</th><td width="60%">'+data.doctor_address+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Dirección</th><td width="60%">'+data.doctor_address+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Date of Birth</th><td width="60%">'+data.doctor_date_of_birth+'</td></tr>';
-                html += '<tr><th width="40%" class="text-right">Doctor Qualification</th><td width="60%">'+data.doctor_degree+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Fecha de Nacimiento</th><td width="60%">'+data.doctor_date_of_birth+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Educación</th><td width="60%">'+data.doctor_degree+'</td></tr>';
 
-                html += '<tr><th width="40%" class="text-right">Doctor Speciality</th><td width="60%">'+data.doctor_expert_in+'</td></tr>';
+                html += '<tr><th width="40%" class="text-right">Especialidad</th><td width="60%">'+data.doctor_expert_in+'</td></tr>';
 
                 html += '</table></div>';
 
@@ -383,7 +383,7 @@ $(document).ready(function(){
 
     	var id = $(this).data('id');
 
-    	if(confirm("Are you sure you want to remove it?"))
+    	if(confirm("¿Estás seguro que deseas elimiarlo?"))
     	{
 
       		$.ajax({

@@ -34,7 +34,7 @@ if(isset($_POST["admin_email_address"]))
 
 		if($object->row_count() == 0)
 		{
-			$error = '<div class="alert alert-danger">Wrong Email Address</div>';
+			$error = '<div class="alert alert-danger">Email Incorrecto</div>';
 		}
 		else
 		{
@@ -44,7 +44,7 @@ if(isset($_POST["admin_email_address"]))
 			{
 				if($row["doctor_status"] == 'Inactive')
 				{
-					$error = '<div class="alert alert-danger">Your account is Inactive, Contact Admin</div>';
+					$error = '<div class="alert alert-danger">Su cuenta se encuentra inactiva, contacte a un Administrador</div>';
 				}
 				else
 				{
@@ -56,7 +56,7 @@ if(isset($_POST["admin_email_address"]))
 					}
 					else
 					{
-						$error = '<div class="alert alert-danger">Wrong Password</div>';
+						$error = '<div class="alert alert-danger">Contraseña Incorrecta</div>';
 					}
 				}
 			}
@@ -78,7 +78,7 @@ if(isset($_POST["admin_email_address"]))
 			}
 			else
 			{
-				$error = '<div class="alert alert-danger">Wrong Password</div>';
+				$error = '<div class="alert alert-danger">Contraseña Incorrecta</div>';
 			}
 		}
 	}

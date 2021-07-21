@@ -21,7 +21,7 @@ include('header.php');
 ?>
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Administracion del Paciente</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Administración del Paciente</h1>
 
                     <!-- DataTales Example -->
                     <span id="message"></span>
@@ -43,9 +43,9 @@ include('header.php');
                                             <th>Nombre</th>
                                             <th>Apellido</th>
                                             <th>Email</th>
-                                            <th>Numero de Telefono</th>
-                                            <th>Status de Verificacion de Email</th>
-                                            <th>Accion</th>
+                                            <th>Número de Teléfono</th>
+                                            <th>Estatus de Verificación de Email</th>
+                                            <th>Acción</th>
                                         </tr>
                                     </thead>
                                     <tbody>

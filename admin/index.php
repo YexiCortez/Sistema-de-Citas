@@ -49,7 +49,7 @@ if($object->is_login())
       align-items: center;
       padding-top: 40px;
       padding-bottom: 40px;
-      background-color: #f5f5f5;
+      background-color: #8ae3ed;
     }
 
     .form-signin {
@@ -88,7 +88,7 @@ if($object->is_login())
 <body class="text-center">
     <main class="form-signin">
          <form method="post" id="login_form">
-            <h1 class="h3 mb-3 fw-normal">Sistema de gestión de citas médicas</h1>
+            <h1 class="h3 mb-3" style="color: black;">Sistema de gestión de citas médicas</h1>
             <span id="error"></span>
             <div class="form-group">
                 <input type="text" name="admin_email_address" id="admin_email_address" class="form-control" required autofocus data-parsley-type="email" data-parsley-trigger="keyup" placeholder="Correo electrónico..." />
